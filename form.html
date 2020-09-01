@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .colorclass {
+            color: red;
+            /* common color*/
+        }
+        
+        .btn {
+            background-color: rgb(255, 140, 0);
+            border: none;
+            border-radius: 7px;
+            width: 180px;
+            color: white;
+            padding: 10px 38px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+        
+        .btn1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body style="background-color: greenyellow;">
+
+    <div class="container">
+        <form style="text-align: center;">
+            <h2 class="colorclass">Personal Details</h2>
+
+            <span class="colorclass" title="required">*</span> Name:
+            <input type="text" placeholder="Name Please...." required>
+            <br><br><span class="colorclass" title="required">*</span> Password:
+            <input type="password" placeholder="5-10 characters including numbers" minlength="5" maxlength="10" required><br> <br>
+            <span class="colorclass" title="required">*</span> E-mail id:
+            <input id="email" type="email" placeholder="Ex: gvrs@gmail.com" required>
+            <br> <br>
+            <span class="colorclass" title="required">*</span> Gender: <input type="radio" name="Gender">Male <input type="radio" name="Gender">Female
+            <br> <br>
+            <span class="colorclass" title="required">*</span> Contact#: <input id="phone" type="tel" placeholder="numbers only" required>
+            <h2 class="colorclass">Educational Qualification</h2>
+            <span class="colorclass" title="required">*</span><label for="degree">Degree:</label>
+
+            <select name="degree" id="degree">
+
+                <option value="none" required>--Select Group--</option>
+                <option value="Btech">Btech</option>
+                <option value="Bcom">Bcom</option>
+                <option value="Bsc">Bsc</option>
+
+            </select> <br> <br>
+
+            <span class="colorclass" title="required">*</span><label for="engg">Engineering:</label>
+            <select name="engg" id="engg">
+
+                <option value="none" required>--Select Group--</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+
+            </select> <br> <br> Hobbies:
+
+            <input type="checkbox" name="chess"> Playing Chess
+
+            <input type="checkbox" name="books"> Reading Books
+
+            <br> <br>
+
+            <h2 class="colorclass"><label for="address">Address</label></h2>
+
+            <textarea name="address" id="address" cols="40" rows="5" placeholder="Address goes here...."></textarea> <br> <br>
+
+            <span class="colorclass" title="required">*</span><label for="resume">Attach Resume:</label>
+
+            <input type="file" id="resume" name="resume"> <br> <br>
+
+
+            <button class="btn btn1">SUBMIT <i class="far fa-arrow-alt-circle-right"></i>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
