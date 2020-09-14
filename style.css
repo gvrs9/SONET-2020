@@ -65,10 +65,17 @@ form {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-
 .hovereffect:hover {
     transform: translateY(15px);
 }*/
+
+.onhover {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
 
 .onhover:hover {
     transform: scale(1.1);
@@ -92,4 +99,11 @@ footer {
 .rowneeded {
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.img1 {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 8px;
+    border-color: gold;
 }
