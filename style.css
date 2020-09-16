@@ -47,7 +47,10 @@ form {
 }
 
 .bd1 {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Wrinkled-Baby-Blue-Paper-Background-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #heading1 {
@@ -107,4 +110,78 @@ footer {
     border-radius: 10px;
     border-width: 8px;
     border-color: gold;
+}
+
+
+/* Center the loader */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+.modal {
+    background-image: url('http://getwallpapers.com/wallpaper/full/1/c/0/44004.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.onhover2:hover {
+    margin-left: 6px;
+    background-color: lightblue;
+    transition: 0.4s ease-in;
+    box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+.fa-phone {
+    transform: rotate(90deg);
 }
