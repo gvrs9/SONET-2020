@@ -20,8 +20,10 @@
     <title>EventGallery</title>
 </head>
 
-<body class="bd1">
-    <div class="container">
+<body class="bd1" onload="myFunction()" style="margin:0;">
+    <div id="loader">
+    </div>
+    <div class="container animate-bottom" style="display:none;" id="myDiv">
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="EventGallery.html"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Keshav_Memorial_Institute_of_Technology_Logo.jpg" class="img-responsive img-thumbnail float-left" width="150px" height="70px" alt="logo" /></a>
@@ -29,18 +31,22 @@
                 <div class="navbar-collapse collapse navbar" id="collapsibleNavbar">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="kmitevening.html">KMIT Evening</a>
+                            <a class="nav-link onhover2 rounded" href="kmitevening.html">KMIT Evening</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="dandiyanight.html">Dandiya Night</a>
+                            <a class="nav-link onhover2 rounded" href="dandiyanight.html">Dandiya Night</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="patangutsav.html">Patang Utsav</a>
+                            <a class="nav-link onhover2 rounded" href="patangutsav.html">Patang Utsav</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">
+                            <a href="contactus.html" class="btn btn-info"><i class="fas fa-address-book"></i> Contact us</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-primary" style="margin-left: 4px;" data-toggle="modal" data-target="#myModal">
                                 <i class="fas fa-sign-in-alt"></i><span class="glyphicon glyphicon-log-in"></span> Login
                             </button>
                         </li>
@@ -60,7 +66,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <!--body starts-->
-                    <div class="modal-body">
+                    <div class="modal-body" style="text-align: left;">
                         <h5>Enter Username:</h5>
                         <input type="text" class="form-control" placeholder="Username" required>
                         <br>
@@ -133,7 +139,7 @@
                     <h2 style="text-align: center;padding:8px">KMIT Evening</h2>
                     <div class="onhover">
                         <a href="kmitevening.html">
-                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://yt3.ggpht.com/a-/AN66SAwpFojXUd3E-cGTFaNViArQ4LHMCydey8apBg=s900-mo-c-c0xffffffff-rj-k-no" width="350px" height="350px">
+                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://yt3.ggpht.com/a-/AN66SAwpFojXUd3E-cGTFaNViArQ4LHMCydey8apBg=s900-mo-c-c0xffffffff-rj-k-no" width="340px" height="340px">
                         </a>
                     </div>
                 </div>
@@ -141,7 +147,7 @@
                     <h2 style="text-align: center;padding:8px">Dandiya Night</h2>
                     <div class="onhover">
                         <a href="dandiyanight.html">
-                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://i.gadgets360cdn.com/large/Dandiya_Night_1537527665964.jpg" width="350px" height="350px">
+                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://i.gadgets360cdn.com/large/Dandiya_Night_1537527665964.jpg" width="340px" height="340px">
                         </a>
                     </div>
                 </div>
@@ -149,7 +155,7 @@
                     <h2 style="text-align: center;padding:8px">Patang Utsav</h2>
                     <div class="onhover">
                         <a href="patangutsav.html">
-                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://images.indianexpress.com/2019/01/makar-sankranti_9.jpg?w=759&h=500&imflag=true" width="350px" height="350px">
+                            <img style="text-align: center;padding:8px;border-style:solid;" src="https://images.indianexpress.com/2019/01/makar-sankranti_9.jpg?w=759&h=500&imflag=true" width="340px" height="340px">
                         </a>
                     </div>
                 </div>
@@ -170,7 +176,18 @@
     </div>
 
 
+    <script>
+        var myVar;
 
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 
 
 
