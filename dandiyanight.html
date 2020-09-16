@@ -7,6 +7,11 @@
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" async></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--custom css-->
@@ -23,18 +28,56 @@
                 <div class="navbar-collapse collapse navbar" id="collapsibleNavbar">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="kmitevening.html">KMIT Evening</a>
+                            <a class="nav-link onhover2 rounded" style="margin-right: 6px;" href="kmitevening.html">KMIT Evening</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link text-light bg-dark rounded" href="dandiyanight.html">Dandiya Night</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="patangutsav.html">Patang Utsav</a>
+                            <a class="nav-link onhover2 rounded" href="patangutsav.html">Patang Utsav</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="contactus.html" class="btn btn-info"><i class="fas fa-address-book"></i> Contact us</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-primary" style="margin-left: 4px;" data-toggle="modal" data-target="#myModal">
+                                        <i class="fas fa-sign-in-alt"></i><span class="glyphicon glyphicon-log-in"></span> Login
+                                    </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!--modal-->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!--modal content goes here-->
+                <div class="modal-content">
+                    <!--header goes here-->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!--body starts-->
+                    <div class="modal-body" style="text-align: left;">
+                        <h5>Enter Username:</h5>
+                        <input type="text" class="form-control" placeholder="Username" required>
+                        <br>
+                        <h5>Enter Password:</h5>
+                        <input type="password" class="form-control" placeholder="Enter Password" required>
+                        <input type="checkbox" name="Remember Me"> Remember Me
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <nav aria-label="AnyLabelbreadcrumb">
             <ol class="breadcrumb">
@@ -130,12 +173,5 @@
         }
     }
 </script>-->
-
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
 
 </html>
