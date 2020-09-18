@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>static</title>
+    <script>
+        var myObjlist = [{
+            Name: "Gvrs sai Ganesh",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "E",
+            Number: "19BD1A058C",
+        }, {
+            Name: "Sumanth",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "E",
+            Number: "19BD1A058L",
+        }, {
+            Name: "Arun Teja",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "E",
+            Number: "19BD1A059L",
+        }, {
+            Name: "Shiva",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "E",
+            Number: "19BD1A058P",
+        }, {
+            Name: "Aditya Tks",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "C",
+            Number: "19BD1A056W",
+        }, {
+            Name: "Sri Ram",
+            College: "KMIT",
+            Branch: "CSE",
+            Section: "E",
+            Number: "19BD1A059T",
+        }, ];
+        document.write(
+            "<table border='5' style='margin-top:40px; margin-left:30px; border-style:double; font-size:20px;'>"
+        );
+        document.write("<tr>");
+        document.write("<th>");
+        document.write("Name");
+        document.write("</th>");
+        document.write("<th>");
+        document.write("College");
+        document.write("</th>");
+        document.write("<th>");
+        document.write("Branch");
+        document.write("</th>");
+        document.write("<th>");
+        document.write("Section");
+        document.write("</th>");
+        document.write("<th>");
+        document.write("Number");
+        document.write("</th>");
+        document.write("</tr>");
+        for (var i = 0; i < myObjlist.length; i++) {
+            document.write("<tr>");
+            document.write("<th>");
+            document.write(myObjlist[i].Name);
+            document.write("</th>");
+            document.write("<th>");
+            document.write(myObjlist[i].College);
+            document.write("</th>");
+            document.write("<th>");
+            document.write(myObjlist[i].Branch);
+            document.write("</th>");
+            document.write("<th>");
+            document.write(myObjlist[i].Section);
+            document.write("</th>");
+            document.write("<th>");
+            document.write(myObjlist[i].Number);
+            document.write("</th>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+
+<body></body>
+
+</html>
